@@ -1,3 +1,5 @@
+mod io_handler;
+
 fn main() {
-    println!("Hello, world!");
+    io_handler::read_file(String::from("./data/anthem_clean.txt"));
 }
