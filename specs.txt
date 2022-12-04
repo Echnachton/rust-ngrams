@@ -1,0 +1,7 @@
+@ word_counter
+
+This will be a fundamental part of a NLP library in rust.
+
+- it counts words in an efficient way
+- it stores the words counts so that it has fast read times
+- it can output the word counts in csv format
