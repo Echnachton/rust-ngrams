@@ -1,3 +1,4 @@
+use std::env;
 use std::fs;
 
 pub fn read_file(path: String) -> String {
@@ -12,4 +13,9 @@ pub fn read_file(path: String) -> String {
 
     // Returns the contents of the file if there was no error
     file_contents
+}
+
+pub fn get_args() -> Vec<String> {
+    let args = env::args().collect();
+    args
 }
