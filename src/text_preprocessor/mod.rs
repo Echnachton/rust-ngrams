@@ -12,6 +12,8 @@ pub fn preprocess_text(file: String) -> String {
     _file = apply_regex(&_file, r"\s+", " ".to_string());
     _file = apply_regex(&_file, r"[\.?!]+\s+", String::from(" <s> "));
 
+    // TODO: Add <s> to beginning and end of file
+
     _file
 }
 

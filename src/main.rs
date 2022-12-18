@@ -9,6 +9,7 @@ use text_preprocessor::preprocess_text;
 fn main() {
     // Getting args
     let args = get_args();
+    // TODO: Preprocess user input
     let user_input = &args[1];
     let n = args[2].parse::<usize>().unwrap();
 
